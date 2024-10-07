@@ -1,0 +1,24 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 4px 8px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #212121;
+
+  background-color: #ededed;
+  border: 1px solid #757575;
+  border-radius: 8px;
+
+  transition: color 250ms linear, background-color 250ms linear;
+}
+
+.link:hover,
+.link:focus {
+  color: #fff;
+  background-color: rgb(113, 181, 249);
+}

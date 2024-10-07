@@ -1,0 +1,35 @@
+.input {
+  padding: 4px 8px;
+  max-width: 320px;
+  width: 100%;
+
+  color: #212121;
+
+  border: 1px solid #757575;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.input:focus {
+  outline-color: rgb(113, 181, 249);
+}
+
+.input::placeholder {
+  color: #757575;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  padding-right: 120px;
+}
+
+.loader-container {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  pointer-events: none;
+}

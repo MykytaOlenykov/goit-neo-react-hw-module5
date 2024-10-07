@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1360px;
+  min-width: 310px;
+}
+
+.header {
+  position: sticky;
+  z-index: 50;
+  top: 0;
+
+  padding: 12px 8px;
+
+  background-color: #fff;
+  border-bottom: 2px solid #757575;
+}

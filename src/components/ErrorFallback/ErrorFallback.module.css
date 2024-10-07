@@ -1,0 +1,8 @@
+.text {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #dbdbdb;
+}

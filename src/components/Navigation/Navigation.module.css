@@ -1,0 +1,21 @@
+.list {
+  display: flex;
+  gap: 40px;
+}
+
+.link {
+  display: block;
+  padding: 8px 12px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #212121;
+
+  border-radius: 8px;
+}
+
+.link:global(.active) {
+  color: #fff;
+  background-color: rgb(113, 181, 249);
+}
