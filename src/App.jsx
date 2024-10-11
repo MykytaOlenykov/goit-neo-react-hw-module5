@@ -20,7 +20,7 @@ export default function App() {
           <Route path="reviews" element={<MovieReviews />} />
         </Route>
 
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="*" element={<NotFoundPage navigateTo="/" />} />
       </Route>
     </Routes>
   );

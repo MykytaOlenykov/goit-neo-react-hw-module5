@@ -58,18 +58,20 @@ export default function MovieDetailsPage() {
     })();
   }, [movieId]);
 
-  if (error || notFound) {
+  if (notFound) {
+    return (
+      <NotFoundPage navigateTo={backLinkLocationRef.current} text="Go back" />
+    );
+  }
+
+  if (error) {
     return (
       <div style={{ padding: 12 }}>
         <div style={{ marginBottom: 12 }}>
           <GoBackLink to={backLinkLocationRef.current} />
         </div>
 
-        {notFound ? (
-          <NotFoundPage />
-        ) : (
-          <ErrorFallback helperText="Something went wrong. Try again." />
-        )}
+        <ErrorFallback helperText="Something went wrong. Try again." />
       </div>
     );
   }
