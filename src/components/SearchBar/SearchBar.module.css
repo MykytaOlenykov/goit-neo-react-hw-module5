@@ -1,5 +1,5 @@
 .input {
-  padding: 4px 8px;
+  padding: 8px 12px 8px 31px;
   max-width: 320px;
   width: 100%;
 
@@ -17,6 +17,19 @@
 
 .input::placeholder {
   color: #757575;
+}
+
+.input-container {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
 }
 
 .container {

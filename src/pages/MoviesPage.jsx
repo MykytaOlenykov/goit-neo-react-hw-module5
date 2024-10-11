@@ -61,6 +61,7 @@ export default function MoviesPage() {
     <div style={{ padding: 12 }}>
       <div style={{ marginBottom: 12 }}>
         <SearchBar
+          initialSearchQuery={query}
           onChangeSearchQuery={debouncedHandleChangeSearchQuery}
           loading={loading}
         />
